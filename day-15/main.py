@@ -132,18 +132,3 @@ def coffe_machine() -> None:
 coffe_machine()
 
 
-# DONE
-# TODO: if resources aren't enough, print a message “Sorry there is not enough water.”
-# TODO: ask the user what they want to drink "What would you like? (espresso/latte/cappuccino):”"
-# TODO: Turn off the Coffee Machine by entering “off” to the prompt.
-# TODO: When the user enters “report” to the prompt, a report should be generated that shows the current resource values
-# TODO: ask the user to insert coins
-# TODO: check if the user has inserted enough money to purchase the drink they selected
-# TODO: if resources aren't enough "Sorry that's not enough money. Money refunded."
-# TODO: check if the resources are enough and make the coffee
-# TODO: if resources excced requirements, print a message “Here is $2.45 dollars in change.”
-# TODO: once the transaction is successful, update the resources and print a message “Here is your latte. Enjoy!”
-
-
-# for name, quantity in product["ingredients"].items():
-#     if ingredients[item] >
