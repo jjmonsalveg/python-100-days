@@ -130,5 +130,3 @@ def coffe_machine() -> None:
 
 
 coffe_machine()
-
-
