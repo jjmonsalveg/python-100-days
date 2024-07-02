@@ -39,6 +39,7 @@ def coffee_machine() -> None:
                     on = False
                 case MachineOptions.REPORT:
                     coffee_maker.report() 
+                    money_machine.report()
         except ValueError as e:
             print(e)
 
