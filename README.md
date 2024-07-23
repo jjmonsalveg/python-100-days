@@ -9,6 +9,14 @@ then we can create a new virtual environment for that day.
 
 ## Setup Global Environment
 
+> [!IMPORTANT]
+> If you are on Mac OS you need to install first `tcl-tk`
+> before you install your python version 3.12.3
+> $ brew install tcl-tk
+> In case you haven't installed uninstall your python version
+> $ pyenv unistall 3.12.3
+> and reinstall after install tcl-tk
+
 1. Install pyenv and pyenv-virtualenv
 2. Install Python 3.12.3
 
