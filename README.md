@@ -12,10 +12,10 @@ then we can create a new virtual environment for that day.
 > [!IMPORTANT]
 > If you are on Mac OS you need to install first `tcl-tk`
 > before you install your python version 3.12.3
-> $ brew install tcl-tk
-> In case you haven't installed uninstall your python version
-> $ pyenv unistall 3.12.3
-> and reinstall after install tcl-tk
+
+```bash
+ brew install tcl-tk
+```
 
 1. Install pyenv and pyenv-virtualenv
 2. Install Python 3.12.3
@@ -35,6 +35,16 @@ then we can create a new virtual environment for that day.
    ```bash
    pyenv local python-100-days
    ```
+
+> [!NOTE]
+> In case you haven't installed `tcl-tk` then you need to uninstall
+> your python version and reinstall after install `tcl-tk`
+
+```bash
+ pyenv unistall 3.12.3
+ brew install tcl-tk
+ pyenv install 3.12.3
+```
 
 ## How to manage dependencies
 
