@@ -41,7 +41,7 @@ then we can create a new virtual environment for that day.
 > your python version and reinstall after install `tcl-tk`
 
 ```bash
- pyenv unistall 3.12.3
+ pyenv uninstall 3.12.3
  brew install tcl-tk
  pyenv install 3.12.3
 ```
