@@ -1,17 +1,33 @@
 import random
-from turtle import Turtle, Screen
+import colorgram
+import turtle as t
 
-timmy_the_turtle = Turtle()
-colours = ["red", "green","black","pink","red"]
+tim = t.Turtle()
+t.colormode(255)
+tim.speed("fastest")
+tim.hideturtle()
 
-timmy_the_turtle.color("red")
+_SPACE = 50
+_DIAMETER = 20 
 
-for sides in range(3,10):
-    angle = 360 / sides
-    timmy_the_turtle.color(random.choice(colours))
-    for _ in range (sides):
-        timmy_the_turtle.forward(50)
-        timmy_the_turtle.right(angle)
+colors = colorgram.extract('./day-18/colors.png', 25)
+rgb_colors = []
 
-screen = Screen()
+for color in colors:
+    rgb_colors.append(tuple(color.rgb))
+
+tim.teleport(-200, -200)
+
+for _ in range(10):
+
+    y = tim.position()[1] 
+
+    for _ in range(10):
+        tim.dot(_DIAMETER, random.choice(rgb_colors))
+        x = tim.position()[0] 
+        tim.teleport(x + _SPACE, y)
+
+    tim.teleport(-200, y + _SPACE)
+
+screen = t.Screen()
 screen.exitonclick()
