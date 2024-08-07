@@ -74,7 +74,8 @@ python -m pip install --upgrade pip
 
 ## Linter y formater
 
-We are using [ruff](https://docs.astral.sh/ruff/) 
+We are using [ruff](https://docs.astral.sh/ruff/)
+
 To check violations run
 
 ```bash
