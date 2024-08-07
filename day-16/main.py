@@ -1,7 +1,9 @@
 from enum import Enum
-from menu import Menu, MenuItem
+
 from coffee_maker import CoffeeMaker
+from menu import Menu
 from money_machine import MoneyMachine
+
 
 class MachineOptions(Enum):
     CAPPUCCINO = "cappuccino"
@@ -9,6 +11,7 @@ class MachineOptions(Enum):
     LATTE = "latte"
     OFF = "off"
     REPORT = "report"
+
 
 def coffee_machine() -> None:
     on = True
@@ -18,10 +21,16 @@ def coffee_machine() -> None:
 
     while on:
         try:
-            choice = MachineOptions(input(f"What would you like? ({menu.get_items()})").casefold())
+            choice = MachineOptions(
+                input(f"What would you like? ({menu.get_items()})").casefold()
+            )
 
             match choice:
-                case MachineOptions.LATTE |  MachineOptions.CAPPUCCINO | MachineOptions.ESPRESSO:
+                case (
+                    MachineOptions.LATTE
+                    | MachineOptions.CAPPUCCINO
+                    | MachineOptions.ESPRESSO
+                ):
                     menu_item = menu.find_drink(choice.value)
                     enough_resources = coffee_maker.is_resource_sufficient(menu_item)
 
@@ -32,13 +41,13 @@ def coffee_machine() -> None:
 
                     if not enough_money:
                         continue
-                    
+
                     coffee_maker.make_coffee(menu_item)
 
                 case MachineOptions.OFF:
                     on = False
                 case MachineOptions.REPORT:
-                    coffee_maker.report() 
+                    coffee_maker.report()
                     money_machine.report()
         except ValueError as e:
             print(e)

@@ -1,16 +1,15 @@
-
 import random
-from turtle import Turtle, Screen
+from turtle import Screen, Turtle
 
 timmy_the_turtle = Turtle()
-colours = ["red", "green","black","pink","red"]
+colours = ["red", "green", "black", "pink", "red"]
 
 timmy_the_turtle.color("red")
 
-for sides in range(3,10):
+for sides in range(3, 10):
     angle = 360 / sides
     timmy_the_turtle.color(random.choice(colours))
-    for _ in range (sides):
+    for _ in range(sides):
         timmy_the_turtle.forward(50)
         timmy_the_turtle.right(angle)
 
