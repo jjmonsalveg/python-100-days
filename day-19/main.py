@@ -38,9 +38,7 @@ if user_bet:
 winning_color = None
 
 while is_race_on:
-
     for turtle in all_turtles:
-
         if turtle.xcor() > 230:
             winning_color = turtle.pencolor()
             is_race_on = False

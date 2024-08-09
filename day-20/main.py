@@ -1,4 +1,4 @@
-# TODO. 
+# TODO.
 # Create a snake  body
 # move the snake
 # create snake food
@@ -14,16 +14,17 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("My Snake Game")
 
+
 def create_snake() -> list[Turtle]:
-   snake: list[Turtle] =  []
+    snake: list[Turtle] = []
 
-   for i in range(3):
-      segment = Turtle(shape="square")
-      segment.color("white")
-      segment.teleport(0 - i * 20 , 0)
-      snake.append(segment)
+    for i in range(3):
+        segment = Turtle(shape="square")
+        segment.color("white")
+        segment.teleport(0 - i * 20, 0)
+        snake.append(segment)
 
-   return snake
+    return snake
 
 
 snake: list[Turtle] = create_snake()
