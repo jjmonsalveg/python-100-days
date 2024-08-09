@@ -1,9 +1,17 @@
-
 import random
-from turtle import Turtle, Screen
+from turtle import Screen, Turtle
 
 turtle = Turtle()
-colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+colours = [
+    "CornflowerBlue",
+    "DarkOrchid",
+    "IndianRed",
+    "DeepSkyBlue",
+    "LightSeaGreen",
+    "wheat",
+    "SlateGray",
+    "SeaGreen",
+]
 
 direction = [0, 90, 180, 270]
 turtle.pensize(15)
@@ -16,4 +24,3 @@ for _ in range(150):
 
 screen = Screen()
 screen.exitonclick()
-

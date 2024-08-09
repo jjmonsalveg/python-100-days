@@ -1,4 +1,4 @@
-from turtle import Turtle, Screen
+from turtle import Screen, Turtle
 
 timmy_the_turtle = Turtle()
 
@@ -13,4 +13,3 @@ for _ in range(15):
 
 screen = Screen()
 screen.exitonclick()
-

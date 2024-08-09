@@ -71,3 +71,31 @@ pip index versions <name-package>
 ```bash
 python -m pip install --upgrade pip
 ```
+
+## Linter y formater
+
+We are using [ruff](https://docs.astral.sh/ruff/)
+
+To check violations run
+
+```bash
+ruff check
+```
+
+To fix them
+
+```bash
+ruff check --fix
+```
+
+To include sort imports run
+
+```bash
+ruff check --select -I --fix
+```
+
+To format the project
+
+```bash
+ruff format
+```
