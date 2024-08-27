@@ -1,33 +1,53 @@
-# TODO.
-# Create a snake  body
-# move the snake
-# create snake food
-# detect collision with foo
-# create a scoreboard
-# detect collision with wall
-# detect collision with tail
-
-from turtle import Screen, Turtle
+import time
+from turtle import Screen
+from snake import Snake
+from food import Food
+from scoreboard import ScoreBoard
 
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("My Snake Game")
+screen.tracer(0)
 
+snake = Snake()
+food = Food()
+scoreboard = ScoreBoard()
 
-def create_snake() -> list[Turtle]:
-    snake: list[Turtle] = []
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
 
-    for i in range(3):
-        segment = Turtle(shape="square")
-        segment.color("white")
-        segment.teleport(0 - i * 20, 0)
-        snake.append(segment)
+game_is_on = True
 
-    return snake
+while game_is_on:
+    screen.update()
+    time.sleep(0.1)
+    snake.move()
 
+    # Detect collision with food.
+    # because 10 of snake center and 5 of food center
+    if snake.head.distance(food) < 15:
+        food.refresh()
+        scoreboard.increase_score()
+        snake.extend()
 
-snake: list[Turtle] = create_snake()
+    # Detect collision with wall.
+    if (
+        snake.head.xcor() > 280
+        or snake.head.xcor() < -280
+        or snake.head.ycor() > 280
+        or snake.head.ycor() < -280
+    ):
+        game_is_on = False
+        scoreboard.game_over()
 
+    # detect collision with tail.
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment) < 10:
+            game_is_on = False
+            scoreboard.game_over()
 
 screen.exitonclick()
