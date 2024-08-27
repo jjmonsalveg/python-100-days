@@ -91,7 +91,7 @@ ruff check --fix
 To include sort imports run
 
 ```bash
-ruff check --select -I --fix
+ruff check --select I --fix
 ```
 
 To format the project
