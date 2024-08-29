@@ -1,3 +1,6 @@
+# garbage files in terms of logic/code
 *__pycache__*
 *.DS_Store
 Session.vim
+*.mypy_cache
+*.ruff_cache
