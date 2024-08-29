@@ -1,8 +1,9 @@
 import time
 from turtle import Screen
-from snake import Snake
+
 from food import Food
 from scoreboard import ScoreBoard
+from snake import Snake
 
 screen = Screen()
 screen.setup(width=600, height=600)
