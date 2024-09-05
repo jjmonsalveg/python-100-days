@@ -1,6 +1,5 @@
 from turtle import Turtle
 
-INITIAL_ANGLE = 36.87
 
 class Ball(Turtle):
     def __init__(self) -> None:
@@ -9,8 +8,16 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.goto(0, 0)
-        self.speed("slowest")
-        self.setheading(INITIAL_ANGLE)
+        self.delta_y = 2
+        self.delta_x = 2
 
     def move(self):
-        self.forward(0.1)
+        y = self.ycor() + self.delta_y
+        x = self.xcor() + self.delta_x
+        self.goto(x, y)
+
+    def bounce_y(self):
+        self.delta_y *= -1
+
+    def bounce_x(self):
+        self.delta_x *= -1

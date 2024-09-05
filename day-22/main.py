@@ -1,8 +1,8 @@
 # TODO. Create the Screen                (DONE)
 # TODO. Create and move the paddle
 # TODO. Create another paddle
-# TODO. Create the ball and make it move
-# TODO. Collision with wall and bounce
+# TODO. Create the ball and make it move (DONE)
+# TODO. Collision with wall and bounce   (DONE)
 # TODO. Detect collision with paddle
 # TODO. Detect when paddle misses
 # TODO. Keep score
@@ -33,5 +33,18 @@ game_is_on = True
 while game_is_on:
     screen.update()
     ball.move()
+
+    # Detect ball collision with wall
+    if ball.ycor() < -290 or ball.ycor() > 290:
+        ball.bounce_y()
+
+    # Detect ball collision with paddles
+    if (
+        ball.distance(r_paddle) <= 63.24
+        and ball.xcor() >= 330
+        or ball.distance(l_paddle) <= 63.24
+        and ball.xcor() <= -330
+    ):
+        ball.bounce_x()
 
 screen.exitonclick()
