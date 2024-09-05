@@ -10,12 +10,19 @@ from turtle import Screen
 
 from ball import Ball
 from paddle import Paddle
+from border import Border
+import time
+
+WIDTH_SCREEN = 800
+HEIGTH_SCREEN = 600
 
 screen = Screen()
-screen.setup(width=800, height=600)
+screen.setup(width=WIDTH_SCREEN, height=HEIGTH_SCREEN)
 screen.bgcolor("black")
 screen.title("Pong")
 screen.tracer(0)
+
+Border(WIDTH_SCREEN, HEIGTH_SCREEN)
 
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
@@ -31,6 +38,7 @@ ball = Ball()
 game_is_on = True
 
 while game_is_on:
+    time.sleep(0.005)
     screen.update()
     ball.move()
 
@@ -40,10 +48,10 @@ while game_is_on:
 
     # Detect ball collision with paddles
     if (
-        ball.distance(r_paddle) <= 63.24
-        and ball.xcor() >= 330
-        or ball.distance(l_paddle) <= 63.24
-        and ball.xcor() <= -330
+        ball.distance(r_paddle) <= 63
+        and ball.xcor() == 330
+        or ball.distance(l_paddle) <= 63
+        and ball.xcor() == -330
     ):
         ball.bounce_x()
 

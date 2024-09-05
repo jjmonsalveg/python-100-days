@@ -8,8 +8,8 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.goto(0, 0)
-        self.delta_y = 2
-        self.delta_x = 2
+        self.delta_y = 1
+        self.delta_x = 1
 
     def move(self):
         y = self.ycor() + self.delta_y
