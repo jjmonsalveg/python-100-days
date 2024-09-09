@@ -1,16 +1,17 @@
 # TODO. Create the Screen                (DONE)
-# TODO. Create and move the paddle
-# TODO. Create another paddle
+# TODO. Create and move the paddle       (DONE)
+# TODO. Create another paddle            (DONE)
 # TODO. Create the ball and make it move (DONE)
 # TODO. Collision with wall and bounce   (DONE)
-# TODO. Detect collision with paddle
-# TODO. Detect when paddle misses
+# TODO. Detect collision with paddle     (DONE)
+# TODO. Detect when paddle misses        (DONE)
 # TODO. Keep score
 from turtle import Screen
 
 from ball import Ball
 from paddle import Paddle
 from border import Border
+from scoreboard import Scoreboard
 import time
 
 WIDTH_SCREEN = 800
@@ -23,6 +24,7 @@ screen.title("Pong")
 screen.tracer(0)
 
 Border(WIDTH_SCREEN, HEIGTH_SCREEN)
+scoreboard = Scoreboard()
 
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
@@ -54,5 +56,15 @@ while game_is_on:
         and ball.xcor() == -330
     ):
         ball.bounce_x()
+        
+    # Detect when R paddle is miss
+    if ball.xcor() > 380:
+        scoreboard.l_point()
+        ball.reset()
+
+    # Detect when L paddle is miss
+    if ball.xcor() < -380:
+        scoreboard.r_point()
+        ball.reset()
 
 screen.exitonclick()
