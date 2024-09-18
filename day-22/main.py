@@ -1,10 +1,10 @@
+import time
 from turtle import Screen
 
 from ball import Ball
-from paddle import Paddle
 from border import Border
+from paddle import Paddle
 from scoreboard import Scoreboard
-import time
 
 WIDTH_SCREEN = 800
 HEIGTH_SCREEN = 600
@@ -48,7 +48,7 @@ while game_is_on:
         and ball.xcor() == -330
     ):
         ball.bounce_x()
-        
+
     # Detect when R paddle is miss
     if ball.xcor() > 380:
         scoreboard.l_point()
