@@ -44,14 +44,6 @@ class CarManager:
         for car in self.all_cars:
             if car.distance(player) < 20:
                 return True
-            # is_x_collision = car.xcor() - 10 <= player.xcor() + 20 and player.xcor() + 20<= car.xcor()+10 or car.xcor() - 10<= player.xcor() + 20 and player.xcor() + 20 <= car.xcor()-10 
-
-            # is_y_top =car.ycor() - 10 <= player.ycor() + 10 and car.ycor() + 10 >= player.ycor() + 10
-
-            # is_y_botton = car.ycor() - 10 <= player.ycor() - 10 and car.ycor() + 10 >= player.ycor() - 10
-
-            # if is_y_top and is_x_collision or is_y_botton and is_x_collision:
-            #     return True
         
         return False
     
