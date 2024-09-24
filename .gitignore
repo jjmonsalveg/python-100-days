@@ -4,3 +4,5 @@
 Session.vim
 *.mypy_cache
 *.ruff_cache
+day-24/Output/ReadyToSend/*.txt
+!day-24/Output/ReadyToSend/example.txt
