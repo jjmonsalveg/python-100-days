@@ -5,4 +5,5 @@ Session.vim
 *.mypy_cache
 *.ruff_cache
 day-24/Output/ReadyToSend/*.txt
+day-25/us-states-game/states_to_learn.csv
 !day-24/Output/ReadyToSend/example.txt
