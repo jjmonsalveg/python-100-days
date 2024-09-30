@@ -1,3 +1,4 @@
 colorgram.py==1.2.0
 prettytable==3.10.0
 ruff==0.5.6
+pandas==2.2.3
