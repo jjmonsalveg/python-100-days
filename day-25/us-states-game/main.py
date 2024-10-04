@@ -20,10 +20,7 @@ while count_guess < NUMBER_OF_STATES_OF_AMERICA:
     data = pandas.read_csv("50_states.csv")
 
     if answer_state == "Exit":
-        missing_states = []
-        for state in data.state.values:
-            if state not in guessed_states:
-                missing_states.append(state)
+        missing_states = [state for state in data.state.values if state not in guessed_states] 
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("states_to_learn.csv")
         break
