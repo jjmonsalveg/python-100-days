@@ -1,4 +1,5 @@
 import pandas
+
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
 nato_phonetics = { row.letter: row.code for (_, row) in data.iterrows()}
 
