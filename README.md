@@ -99,3 +99,21 @@ To format the project
 ```bash
 ruff format
 ```
+
+## Index
+
+- [Day 15](/day-15/main.py): Expresso Machine (functional programming)
+- [Day 16](/day-16/main.py): Expresso Machine (with classes)
+- [Day 17](/day-17/main.py): Question bank and use of lists
+- [Day 18](/day-18/main.py): Multiple challengues with Turtle and color challengue
+- [Day 19](/day-19/main.py): Turtle competition
+- [Day 20](/day-20/main.py): Snake game using Turtle library
+- [Day 22](/day-22/main.py): Pong game using Turtle library
+- [Day 23](/day-23/main.py): Car game using Turtle library
+- [Day 24](/day-24/main.py): Letter problem with Files
+- Day 24:
+  - [squirrel stats](/day-25/squirrel/main.py): Use of pandas to collect stats
+  - [US states game](/day-25/us-states-game/main.py): GUI game with files and pandas
+- [Day 26](/day-26/main.py): Nato Game - List and dict compresion to build data
+  read from csv
+- [Day 27](/day-26/main.py): Build GUI with Tk module and build miles to km converter
