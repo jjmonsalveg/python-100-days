@@ -1,4 +1,5 @@
 import turtle
+
 import pandas
 
 ALIGNMENT = "CENTER"
