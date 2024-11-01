@@ -116,4 +116,7 @@ ruff format
   - [US states game](/day-25/us-states-game/main.py): GUI game with files and pandas
 - [Day 26](/day-26/main.py): Nato Game - List and dict compresion to build data
   read from csv
-- [Day 27](/day-26/main.py): Build GUI with Tk module and build miles to km converter
+- [Day 27](/day-26/main.py): Build GUI with Tkinter module and build miles to km converter
+- [Day 28](/day-28/main.py): Build a Pomodoro GUI with Tkinter
+- [Day 29](/day-29/main.py): Password Manager GUI with Tkinter
+- [Day 30](/day-30/playground.py): Management of Exceptions, Errors and JSON data
