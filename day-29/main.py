@@ -1,3 +1,4 @@
+import json
 from random import choice, randint, shuffle
 from tkinter import END, Button, Canvas, Entry, Label, PhotoImage, Tk, messagebox
 
@@ -78,26 +79,57 @@ def generate_password():
     password_entry.delete(0, END)
     password_entry.insert(0, password )
 
+def find_password()->None:
+    website = website_entry.get().lower()
+
+    try:
+        with open("data.json", mode="r") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showerror(title="Error", message="No Data File Found.")
+
+    if website in data:
+        email = data[website]["email"]
+        password = data[website]["password"]
+        messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+    else:
+        messagebox.showerror(title="Error", message=f"No details for the {website} exists.")
+
 # ---------------------------- SAVE PASSWORD ------------------------------- #
+def _write_data_to_file(new_data:dict)->None:
+    with open("data.json", mode="r") as data_file:
+        #Read old data
+        data = json.load(data_file)
+        #updating old data with new data
+        data.update(new_data)
+
+    with open("data.json", mode="w") as data_file:
+        #Saving updated data
+        json.dump(new_data,data_file, indent=4)
+
+
 def save() -> None:
-    website = website_entry.get().strip()
+    website = website_entry.get().strip().lower()
     email = email_entry.get().strip()
     password = password_entry.get().strip()
+    new_data = {
+        website: {"email": email, "password": password}
+        }
 
     if not website or not password or not email:
         messagebox.showwarning(title="Oops",message="Please don't leave any fields empty!")
-        return
-    
-    is_ok = messagebox.askokcancel(title=website, message=f"These are the details entered: \nEmail: {email} "
-                           f"\n Password: {password}\n Is it ok to save?")
+    else:
+        try:
+            _write_data_to_file(new_data)
+        except FileNotFoundError:
+           with open("data.json",mode="w") as file:
+                json.dump({}, file, indent=4)
 
-    if is_ok:
-        with open("data.txt", mode="a") as data_file:
-            data_file.write(f"{website} | {email} | {password}\n")
-            website_entry.delete(0, END)
-            email_entry.delete(0, END)
-            email_entry.insert(0, DEFAULT_EMAIL)
-            password_entry.delete(0, END)
+           _write_data_to_file(new_data)
+        website_entry.delete(0, END)
+        email_entry.delete(0, END)
+        email_entry.insert(0, DEFAULT_EMAIL)
+        password_entry.delete(0, END)
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -112,9 +144,12 @@ canvas.grid(column=1, row=0)
 website_label = Label(text="Website:", font=(FONT_NAME, FONT_SIZE))
 website_label.grid(column=0, row=1)
 
-website_entry = Entry(width=39)
-website_entry.grid(column=1, row=1, columnspan=2)
+website_entry = Entry(width=22)
+website_entry.grid(column=1, row=1)
 website_entry.focus()
+
+search_button = Button(text="Search",width=13 ,command=find_password)
+search_button.grid(column=2, row=1)
 
 email_label = Label(text="Email/Username:", font=(FONT_NAME, FONT_SIZE))
 email_label.grid(column=0, row=2)
