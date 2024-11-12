@@ -111,7 +111,7 @@ ruff format
 - [Day 22](/day-22/main.py): Pong game using Turtle library
 - [Day 23](/day-23/main.py): Car game using Turtle library
 - [Day 24](/day-24/main.py): Letter problem with Files
-- Day 24:
+- Day 25:
   - [squirrel stats](/day-25/squirrel/main.py): Use of pandas to collect stats
   - [US states game](/day-25/us-states-game/main.py): GUI game with files and pandas
 - [Day 26](/day-26/main.py): Nato Game - List and dict compresion to build data
@@ -120,3 +120,4 @@ ruff format
 - [Day 28](/day-28/main.py): Build a Pomodoro GUI with Tkinter
 - [Day 29](/day-29/main.py): Password Manager GUI with Tkinter
 - [Day 30](/day-30/playground.py): Management of Exceptions, Errors and JSON data
+- [Day 31](/day-31/main.py): Flash cards to translate beetween French and English --Pandas, tkinter --
