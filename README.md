@@ -121,3 +121,6 @@ ruff format
 - [Day 29](/day-29/main.py): Password Manager GUI with Tkinter
 - [Day 30](/day-30/playground.py): Management of Exceptions, Errors and JSON data
 - [Day 31](/day-31/main.py): Flash cards to translate beetween French and English --Pandas, tkinter --
+- [Day 32](/day-32/main.py): Send birthday emails --smtplib and datetime--
+   you need to create a "Password aplication" from your google administration
+   account. Be sure you have rows with a birthday that correspond to today.
