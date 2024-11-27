@@ -18,16 +18,16 @@ then we can create a new virtual environment for that day.
 ```
 
 1. Install pyenv and pyenv-virtualenv
-2. Install Python 3.12.3
+2. Install Python 3.12.7
 
    ```bash
-   pyenv install 3.12.3
+   pyenv install 3.12.7
    ```
 
 3. Create a virtual environment for the project
 
    ```bash
-   pyenv virtualenv 3.12.3 python-100-days
+   pyenv virtualenv 3.12.7 python-100-days
    ```
 
 4. set as local python version
@@ -124,3 +124,14 @@ ruff format
 - [Day 32](/day-32/main.py): Send birthday emails --smtplib and datetime--
    you need to create a "Password aplication" from your google administration
    account. Be sure you have rows with a birthday that correspond to today.
+- Day 33: Build an API(Application Programming Interfaces)
+  - Resources:
+      - [status codes](https://www.webfx.com/web-development/glossary/http-status-codes/)
+      - [requests library](https://docs.python-requests.org/en/latest/)
+      - [location per coordenates](https://www.latlong.net/)
+  - Code:
+      - [Kanye GUI](/day-33/kanye-quotes-start/main.py): Use Kanye API to get
+      quotes and show them in a GUI with tkinter
+      - [ISS overhead email](/day-33/issoverhead/main.py): send and email when
+      iss over our head (depending where you are lat,long)  
+      - [Play with lat|long](/day-33/main.py)
