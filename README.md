@@ -135,3 +135,4 @@ ruff format
       - [ISS overhead email](/day-33/issoverhead/main.py): send and email when
       iss over our head (depending where you are lat,long)  
       - [Play with lat|long](/day-33/main.py)
+- [Day 34](/day-34/main.py): Creating a GUI quiz that grab questions from an API(tkinter)
