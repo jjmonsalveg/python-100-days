@@ -9,6 +9,7 @@ FONT_SIZE = 14
 DEFAULT_EMAIL = "angela@gmail.com"
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
+
 def generate_password():
     letters = [
         "a",
@@ -77,9 +78,10 @@ def generate_password():
     password = "".join(password_list)
     pyperclip.copy(password)
     password_entry.delete(0, END)
-    password_entry.insert(0, password )
+    password_entry.insert(0, password)
 
-def find_password()->None:
+
+def find_password() -> None:
     website = website_entry.get().lower()
 
     try:
@@ -91,45 +93,51 @@ def find_password()->None:
     if website in data:
         email = data[website]["email"]
         password = data[website]["password"]
-        messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+        messagebox.showinfo(
+            title=website, message=f"Email: {email}\nPassword: {password}"
+        )
     else:
-        messagebox.showerror(title="Error", message=f"No details for the {website} exists.")
+        messagebox.showerror(
+            title="Error", message=f"No details for the {website} exists."
+        )
+
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
-def _write_data_to_file(new_data:dict)->None:
+def _write_data_to_file(new_data: dict) -> None:
     with open("data.json", mode="r") as data_file:
-        #Read old data
+        # Read old data
         data = json.load(data_file)
-        #updating old data with new data
+        # updating old data with new data
         data.update(new_data)
 
     with open("data.json", mode="w") as data_file:
-        #Saving updated data
-        json.dump(new_data,data_file, indent=4)
+        # Saving updated data
+        json.dump(new_data, data_file, indent=4)
 
 
 def save() -> None:
     website = website_entry.get().strip().lower()
     email = email_entry.get().strip()
     password = password_entry.get().strip()
-    new_data = {
-        website: {"email": email, "password": password}
-        }
+    new_data = {website: {"email": email, "password": password}}
 
     if not website or not password or not email:
-        messagebox.showwarning(title="Oops",message="Please don't leave any fields empty!")
+        messagebox.showwarning(
+            title="Oops", message="Please don't leave any fields empty!"
+        )
     else:
         try:
             _write_data_to_file(new_data)
         except FileNotFoundError:
-           with open("data.json",mode="w") as file:
+            with open("data.json", mode="w") as file:
                 json.dump({}, file, indent=4)
 
-           _write_data_to_file(new_data)
+            _write_data_to_file(new_data)
         website_entry.delete(0, END)
         email_entry.delete(0, END)
         email_entry.insert(0, DEFAULT_EMAIL)
         password_entry.delete(0, END)
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -148,7 +156,7 @@ website_entry = Entry(width=22)
 website_entry.grid(column=1, row=1)
 website_entry.focus()
 
-search_button = Button(text="Search",width=13 ,command=find_password)
+search_button = Button(text="Search", width=13, command=find_password)
 search_button.grid(column=2, row=1)
 
 email_label = Label(text="Email/Username:", font=(FONT_NAME, FONT_SIZE))
@@ -164,7 +172,7 @@ password_label.grid(column=0, row=3)
 password_entry = Entry(width=21)
 password_entry.grid(column=1, row=3)
 
-generate_password_button = Button(text="Generate Password", command= generate_password)
+generate_password_button = Button(text="Generate Password", command=generate_password)
 generate_password_button.grid(column=2, row=3)
 
 add_button = Button(text="Add", width=36, command=save)

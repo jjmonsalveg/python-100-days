@@ -26,7 +26,7 @@
 # print(data["temp"].mean())
 # print(data["temp"].max())
 
-# Get data in column 
+# Get data in column
 # print(data["condition"])
 # print(data.condition)
 
@@ -56,7 +56,7 @@ import pandas
 data = pandas.read_csv("squirrel_count.csv")
 # print(data["Primary Fur Color"].value_counts())
 
-#same effect manually
+# same effect manually
 
 # print((data["Primary Fur Color"] == "Gray").sum())
 gray_squirrel_count = len(data[data["Primary Fur Color"] == "Gray"])
@@ -69,7 +69,7 @@ print(black_squirrel_count)
 
 data_dict = {
     "Fur Color": ["Gray", "Cinnamon", "Black"],
-    "Count": [gray_squirrel_count, red_squirrel_count, black_squirrel_count]
+    "Count": [gray_squirrel_count, red_squirrel_count, black_squirrel_count],
 }
 
 df = pandas.DataFrame(data_dict)

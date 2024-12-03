@@ -1,9 +1,16 @@
-
 import datetime as dt
-import smtplib
 import random
+import smtplib
 
-_DAYS_OF_WEEK = ("Monday", "Tuesday", "Wenesday", "Thursday","Friday","Saturday", "Sunday")
+_DAYS_OF_WEEK = (
+    "Monday",
+    "Tuesday",
+    "Wenesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+)
 _MY_EMAIL = "giraldojose1996@gmail.com"
 _PASSWORD = "mwwh pwui dsbm izxz"
 
@@ -11,7 +18,7 @@ now = dt.datetime.now()
 day_of_week = _DAYS_OF_WEEK[now.weekday()]
 
 with open("quotes.txt", mode="r") as quote_file:
-   quotes = quote_file.readlines() 
+    quotes = quote_file.readlines()
 
 selected_quote = random.choice(quotes)
 
