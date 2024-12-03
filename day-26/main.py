@@ -1,7 +1,7 @@
 import pandas
 
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
-nato_phonetics = { row.letter: row.code for (_, row) in data.iterrows()}
+nato_phonetics = {row.letter: row.code for (_, row) in data.iterrows()}
 ask_for_input = True
 
 while ask_for_input:

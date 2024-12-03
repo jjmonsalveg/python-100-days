@@ -1,4 +1,4 @@
-#Example 1
+# Example 1
 try:
     file = open("unexistent.txt")
     a_dictionary = {"key": "value"}

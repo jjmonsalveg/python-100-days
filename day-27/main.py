@@ -2,9 +2,10 @@ from tkinter import Button, Entry, Label, Tk
 
 
 def button_clicked():
-    miles= float(miles_input.get())
+    miles = float(miles_input.get())
     km = miles * 1.60934
     result_label.config(text=f"{km}")
+
 
 window = Tk()
 window.title("Miles to Km Converter")

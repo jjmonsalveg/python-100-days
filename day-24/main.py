@@ -1,12 +1,12 @@
-INVITED_NAMES_PATH = './Input/Names/invited_names.txt'
+INVITED_NAMES_PATH = "./Input/Names/invited_names.txt"
 NEW_FILES_PATH = "./Output/ReadyToSend/"
 PLACEHOLDER = "[name]"
 STARTING_LETTER_PATH = "./Input/Letters/starting_letter.txt"
 
-with open(STARTING_LETTER_PATH, 'r') as letter_file:
+with open(STARTING_LETTER_PATH, "r") as letter_file:
     letter_template = letter_file.read()
 
-with open(INVITED_NAMES_PATH, 'r') as names_file:
+with open(INVITED_NAMES_PATH, "r") as names_file:
     names = names_file.readlines()
 
 for name in names:

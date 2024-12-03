@@ -1,9 +1,10 @@
-import requests
-from datetime import datetime, timezone
+import os
 import smtplib
 import time
+from datetime import datetime, timezone
+
+import requests
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
@@ -24,7 +25,10 @@ def is_iss_overhead():
     iss_longitude = float(data["iss_position"]["longitude"])
 
     # Your position is within +5 or -5 degrees of the iss position.
-    return MY_LAT - 5 <= iss_latitude <= MY_LAT + 5 and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5
+    return (
+        MY_LAT - 5 <= iss_latitude <= MY_LAT + 5
+        and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5
+    )
 
 
 def is_night():

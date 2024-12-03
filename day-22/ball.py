@@ -25,10 +25,10 @@ class Ball(Turtle):
     def increase_velocity(self):
         if self.delta_x < 0:
             self.delta_x -= 1
-        else: 
+        else:
             self.delta_x += 1
-            
-        if self.delta_y < 0: 
+
+        if self.delta_y < 0:
             self.delta_y -= 1
         else:
             self.delta_y += 1

@@ -16,12 +16,16 @@ count_guess = 0
 guessed_states = []
 
 while count_guess < NUMBER_OF_STATES_OF_AMERICA:
-    answer_state = screen.textinput(title="Guess the State", prompt="What's another state's name?").title()
+    answer_state = screen.textinput(
+        title="Guess the State", prompt="What's another state's name?"
+    ).title()
 
     data = pandas.read_csv("50_states.csv")
 
     if answer_state == "Exit":
-        missing_states = [state for state in data.state.values if state not in guessed_states] 
+        missing_states = [
+            state for state in data.state.values if state not in guessed_states
+        ]
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("states_to_learn.csv")
         break

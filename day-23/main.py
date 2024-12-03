@@ -30,7 +30,7 @@ while game_is_on:
     if car_manager.detect_collision(player):
         game_is_on = False
         scoreboard.game_over()
-    
+
     if player.is_at_finish_line():
         player.go_to_start()
         car_manager.increase_speed()
