@@ -136,3 +136,19 @@ ruff format
       iss over our head (depending where you are lat,long)  
       - [Play with lat|long](/day-33/main.py)
 - [Day 34](/day-34/main.py): Creating a GUI quiz that grab questions from an API(tkinter)
+- [Day 35](/day-35/main.py): API Keys, Authentication & env variables -SMS usign Twilio-
+
+   - Commands:
+
+      ```shell
+      env                       # list environment variables set in your terminal
+      env | grep YOUR_VARIABLE   # look for YOUR_VARIABLE 
+      export YOUR_VARIABLE=value # set YOUR_VARIABLE to value
+      ```
+
+   - Resources:
+      - [Weather API](https://openweathermap.org/api)
+      - [Json viewer](https://jsonviewer.stack.hu/)
+      - [Weather Map](https://www.ventusky.com/)
+      - [Whatsapp Sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn)
+      

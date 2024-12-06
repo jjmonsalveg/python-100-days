@@ -6,3 +6,4 @@ pyperclip==1.9.0
 python-dotenv==1.0.1
 requests==2.32.3
 ipdb               0.13.13
+twilio==9.3.8
