@@ -54,6 +54,11 @@
     - [Json viewer](https://jsonviewer.stack.hu/)
     - [Weather Map](https://www.ventusky.com/)
     - [Whatsapp Sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn)
+- [Day 36](/day-36/main.py): Trading News Alert Project -send news is a sms
+  messages if Tesla's stock prices change %5 in two consecutives days-
+  - Resources:
+    - [News API](https://newsapi.org/)
+    - [Stock Prices API](https://www.alphavantage.co/)
 
 ## Environment
 
