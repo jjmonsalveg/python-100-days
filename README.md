@@ -59,6 +59,10 @@
   - Resources:
     - [News API](https://newsapi.org/)
     - [Stock Prices API](https://www.alphavantage.co/)
+- Day 37: Habit tracking project -- POST,PUT, DELETE http methods and authentication using headers --
+  - Resources:
+    - [Pixela API DOCS](https://docs.pixe.la/)
+    - [Request docs](https://requests.readthedocs.io/en/latest/api/)
 
 ## Environment
 
