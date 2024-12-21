@@ -63,6 +63,12 @@
   - Resources:
     - [Pixela API DOCS](https://docs.pixe.la/)
     - [Request docs](https://requests.readthedocs.io/en/latest/api/)
+- [Day 38](/day-38/main.py): Workout tracking using google sheets
+  - [Nutrition API](https://developer.nutritionix.com/)
+    - [Headers Auth](https://docx.syndigo.com/developers/docs/understand-request-headers)
+    - [Natural language endpoint](https://docx.syndigo.com/developers/docs/natural-language-for-exercise)
+    - [API DOCS](https://trackapi.nutritionix.com/docs/#/default/post_v2_natural_exercise)
+  - [Sheety API](https://dashboard.sheety.co/)
 
 ## Environment
 
