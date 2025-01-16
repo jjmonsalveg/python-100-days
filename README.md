@@ -69,6 +69,12 @@
     - [Natural language endpoint](https://docx.syndigo.com/developers/docs/natural-language-for-exercise)
     - [API DOCS](https://trackapi.nutritionix.com/docs/#/default/post_v2_natural_exercise)
   - [Sheety API](https://dashboard.sheety.co/)
+- [Day 39](/day-39/main.py): Capstone part 1 -- Fligth deal finder--
+  - Resources:
+    - [Amadeus Flight offer docs](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference)
+    - [Amadeus Flight Offer Docs](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference)
+    - [Amadeus How to work with API keys and tokens guide](https://developers.amadeus.com/get-started/get-started-with-self-service-apis-335)
+    - [Amadeus Search for Airport Codes by City name](https://developers.amadeus.com/self-service/category/destination-experiences/api-doc/city-search/api-reference)
 
 ## Environment
 
