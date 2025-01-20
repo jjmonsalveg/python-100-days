@@ -70,6 +70,9 @@
     - [API DOCS](https://trackapi.nutritionix.com/docs/#/default/post_v2_natural_exercise)
   - [Sheety API](https://dashboard.sheety.co/)
 - [Day 39](/day-39/main.py): Capstone part 1 -- Fligth deal finder--
+  Send sms if for a given list of fligths we find cheaper costs than the given
+  in a spreadsheet in google docs.
+
   - Resources:
     - [Amadeus Flight offer docs](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference)
     - [Amadeus Flight Offer Docs](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference)

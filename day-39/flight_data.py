@@ -1,4 +1,14 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class FlightData:
+    price: float
+    origin_airport: str
+    destination_airport: str
+    out_date: str
+    return_date: str
+
     def __init__(
         self, price, origin_airport, destination_airport, out_date, return_date
     ):

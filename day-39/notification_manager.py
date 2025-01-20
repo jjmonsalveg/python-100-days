@@ -1,5 +1,8 @@
-from twilio.rest import Client
 from dataclasses import dataclass
+
+from twilio.rest import Client
+
+from config import Config
 from flight_data import FlightData
 
 
@@ -17,10 +20,10 @@ class NotificationManager:
     This class is responsible for sending notifications with the deal flight details.
     """
 
-    def __init__(self, config: dict):
-        self._twilio_from_number = config["twilio_from_number"]
-        self._twilio_to_number = config["twilio_to_number"]
-        self._client = Client(config["twilio_account_sid"], config["twilio_auth_token"])
+    def __init__(self, config: Config):
+        self._twilio_from_number = config.twilio_from_number
+        self._twilio_to_number = config.twilio_to_number
+        self._client = Client(config.twilio_account_sid, config.twilio_auth_token)
 
     def send(self, flight_data: FlightData) -> SMSMessage | None:
         body_text = (

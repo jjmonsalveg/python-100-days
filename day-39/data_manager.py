@@ -1,12 +1,16 @@
 import requests
 
+from config import Config
+
+
 class SheetyAPIError(Exception):
     pass
 
+
 class DataManager:
-    def __init__(self, config: dict):
-        self._sheety_api_id_endpoint = config["sheety_api_id_endpoint"]
-        self._sheety_bearer_token = config["sheety_bearer_token"]
+    def __init__(self, config: Config):
+        self._sheety_api_id_endpoint = config.sheety_api_id_endpoint
+        self._sheety_bearer_token = config.sheety_bearer_token
         self._sheety_headers = {"Authorization": f"Bearer {self._sheety_bearer_token}"}
         self._sheety_url = (
             f"https://api.sheety.co/{self._sheety_api_id_endpoint}/flightDeals/prices"

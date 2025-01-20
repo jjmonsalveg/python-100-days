@@ -1,5 +1,8 @@
-import requests
 from datetime import datetime
+
+import requests
+
+from config import Config
 
 
 class GetTokenApiError(Exception):
@@ -15,9 +18,9 @@ class FlightSearch:
     Class is responsible for talking to the Flight Search API.
     """
 
-    def __init__(self, config: dict):
-        self._amadeus_api_key = config["amadeus_api_key"]
-        self._amadeus_api_secret = config["amadeus_api_secret"]
+    def __init__(self, config: Config):
+        self._amadeus_api_key = config.amadeus_api_key
+        self._amadeus_api_secret = config.amadeus_api_secret
         self._amadeus_domain = "https://test.api.amadeus.com/v1"
         self._amadeus_domain_v2 = "https://test.api.amadeus.com/v2"
         self._amadeus_token = None
