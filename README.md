@@ -78,6 +78,8 @@
     - [Amadeus Flight Offer Docs](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference)
     - [Amadeus How to work with API keys and tokens guide](https://developers.amadeus.com/get-started/get-started-with-self-service-apis-335)
     - [Amadeus Search for Airport Codes by City name](https://developers.amadeus.com/self-service/category/destination-experiences/api-doc/city-search/api-reference)
+- [Day 40](/day-40/main.py): Intermediate+ Capstone Part 2: Flight Club
+      - Modify day 39 to send email notifications when a flight is cheap
 
 ## Environment
 
