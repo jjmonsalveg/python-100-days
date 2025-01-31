@@ -7,7 +7,6 @@ class SheetyAPIError(Exception):
     pass
 
 
-# TODO. add new method to retrieve user email get_customer_emails
 class DataManager:
     def __init__(self, config: Config):
         self._sheety_api_id_endpoint = config.sheety_api_id_endpoint
