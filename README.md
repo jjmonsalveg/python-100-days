@@ -80,6 +80,11 @@
     - [Amadeus Search for Airport Codes by City name](https://developers.amadeus.com/self-service/category/destination-experiences/api-doc/city-search/api-reference)
 - [Day 40](/day-40/main.py): Intermediate+ Capstone Part 2: Flight Club
       - Modify day 39 to send email notifications when a flight is cheap
+- [Day 41]:  Day 41 - Web Foundation - Introduction to HTML
+    - [Heading Elements](/day-41/2.1%20Heading%20Element/index.html)
+    - [Paragraph Element](/day-41/2.2%20Paragraph%20Element/index.html)
+    - [Void Elements](/day-41/2.3%20Void%20Elements/index.html)
+    - [Movie ranking project](/day-41/2.4%20Movie%20Ranking%20Project/index.html)
 
 ## Environment
 
