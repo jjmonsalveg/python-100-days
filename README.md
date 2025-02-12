@@ -91,6 +91,10 @@
       - [3.2 Anchor Elements](/day-42/3.2%20Anchor%20Elements/index.html)
       - [3.3 Image Elements](/day-42/3.3%20Image%20Elements/index.html)
       - [3.4 Brithday Invite Project](/day-42/3.4%20Birthday%20Invite%20Project/index.html)
+- Day 43: Web Foundation - Introduction to CSS
+      - [5.1 Adding CSS](/day-43/5.1.%20Adding%20CSS/index.html)
+      - [5.2 CSS Selectors](/day-43/5.3%20CSS%20Selectors/index.html)
+      - [5.3 Color Vocab Project](/day-43/5.4%20Color%20Vocab%20Project/index.html)
 
 ## Environment
 
