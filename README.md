@@ -54,6 +54,7 @@
     - [Json viewer](https://jsonviewer.stack.hu/)
     - [Weather Map](https://www.ventusky.com/)
     - [Whatsapp Sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn)
+
 - [Day 36](/day-36/main.py): Trading News Alert Project -send news is a sms
   messages if Tesla's stock prices change %5 in two consecutives days-
   - Resources:
@@ -78,23 +79,29 @@
     - [Amadeus Flight Offer Docs](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference)
     - [Amadeus How to work with API keys and tokens guide](https://developers.amadeus.com/get-started/get-started-with-self-service-apis-335)
     - [Amadeus Search for Airport Codes by City name](https://developers.amadeus.com/self-service/category/destination-experiences/api-doc/city-search/api-reference)
+
 - [Day 40](/day-40/main.py): Intermediate+ Capstone Part 2: Flight Club
-      - Modify day 39 to send email notifications when a flight is cheap
+  - Modify day 39 to send email notifications when a flight is cheap
 - Day 41: Web Foundation - Introduction to HTML
-      - [Heading Elements](/day-41/2.1%20Heading%20Element/index.html)
-      - [Paragraph Element](/day-41/2.2%20Paragraph%20Element/index.html)
-      - [Void Elements](/day-41/2.3%20Void%20Elements/index.html)
-      - [Movie ranking project](/day-41/2.4%20Movie%20Ranking%20Project/index.html)
+  - [Heading Elements](/day-41/2.1%20Heading%20Element/index.html)
+  - [Paragraph Element](/day-41/2.2%20Paragraph%20Element/index.html)
+  - [Void Elements](/day-41/2.3%20Void%20Elements/index.html)
+  - [Movie ranking project](/day-41/2.4%20Movie%20Ranking%20Project/index.html)
 - Day 42: Web Foundation - Intermediate HTML
-      - [3.0 List Elements](/day-42/3.0%20List%20Elements/index.html)
-      - [3.1 Nesting and indentation](/day-42/3.1%20Nesting%20and%20Indentation/index.html)
-      - [3.2 Anchor Elements](/day-42/3.2%20Anchor%20Elements/index.html)
-      - [3.3 Image Elements](/day-42/3.3%20Image%20Elements/index.html)
-      - [3.4 Brithday Invite Project](/day-42/3.4%20Birthday%20Invite%20Project/index.html)
+  - [3.0 List Elements](/day-42/3.0%20List%20Elements/index.html)
+  - [3.1 Nesting and indentation](/day-42/3.1%20Nesting%20and%20Indentation/index.html)
+  - [3.2 Anchor Elements](/day-42/3.2%20Anchor%20Elements/index.html)
+  - [3.3 Image Elements](/day-42/3.3%20Image%20Elements/index.html)
+  - [3.4 Brithday Invite Project](/day-42/3.4%20Birthday%20Invite%20Project/index.html)
 - Day 43: Web Foundation - Introduction to CSS
-      - [5.1 Adding CSS](/day-43/5.1.%20Adding%20CSS/index.html)
-      - [5.2 CSS Selectors](/day-43/5.3%20CSS%20Selectors/index.html)
-      - [5.3 Color Vocab Project](/day-43/5.4%20Color%20Vocab%20Project/index.html)
+  - [5.1 Adding CSS](/day-43/5.1.%20Adding%20CSS/index.html)
+  - [5.2 CSS Selectors](/day-43/5.3%20CSS%20Selectors/index.html)
+  - [5.3 Color Vocab Project](/day-43/5.4%20Color%20Vocab%20Project/index.html)
+- Day 44: Web Foundation - Intermediate CSS
+  - [6.0 Css Colors](/day-44/6.0%20CSS%20Colors/index.html)
+  - [6.1 Font Properties](/day-44/6.1%20Font%20Properties/index.html)
+  - [6.3 Css Box Model](/day-44/6.3%20CSS%20Box%20Model/index.html)
+  - [6.4 Motivation Meme Project](/day-44/6.4%20Motivation%20Meme%20Project/index.html)
 
 ## Environment
 
