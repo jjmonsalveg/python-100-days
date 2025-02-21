@@ -102,6 +102,7 @@
   - [6.1 Font Properties](/day-44/6.1%20Font%20Properties/index.html)
   - [6.3 Css Box Model](/day-44/6.3%20CSS%20Box%20Model/index.html)
   - [6.4 Motivation Meme Project](/day-44/6.4%20Motivation%20Meme%20Project/index.html)
+- Day 45: Intermediate+ Web Scraping with Beautiful Soup
 
 ## Environment
 
