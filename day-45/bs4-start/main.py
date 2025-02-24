@@ -1,4 +1,3 @@
-
 from bs4 import BeautifulSoup
 import requests
 
@@ -17,7 +16,10 @@ for article in articles:
     article_texts.append(text)
     article_links.append(link)
 
-article_upvotes = [int(score.getText().split()[0]) for score in soup.find_all(name="span", class_="score")]
+article_upvotes = [
+    int(score.getText().split()[0])
+    for score in soup.find_all(name="span", class_="score")
+]
 most_voted_article_index = article_upvotes.index(max(article_upvotes))
 
 

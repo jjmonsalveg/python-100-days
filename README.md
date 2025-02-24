@@ -103,6 +103,8 @@
   - [6.3 Css Box Model](/day-44/6.3%20CSS%20Box%20Model/index.html)
   - [6.4 Motivation Meme Project](/day-44/6.4%20Motivation%20Meme%20Project/index.html)
 - Day 45: Intermediate+ Web Scraping with Beautiful Soup
+  - [bs4-start](/day-45/bs4-start/main.py): Basic of scraping
+  - [Starting Code - 100 movies](/day-45/Starting%20Code%20-%20100%20movies%20to%20watch%20start/main.py): Scraping top 100 movies html page to extract names of movies.
 
 ## Environment
 
