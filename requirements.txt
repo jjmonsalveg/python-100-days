@@ -7,3 +7,4 @@ python-dotenv==1.0.1
 requests==2.32.3
 ipdb==0.13.13
 twilio==9.3.8
+beautifulsoup4==4.13.3
