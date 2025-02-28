@@ -105,6 +105,11 @@
 - Day 45: Intermediate+ Web Scraping with Beautiful Soup
   - [bs4-start](/day-45/bs4-start/main.py): Basic of scraping
   - [Starting Code - 100 movies](/day-45/Starting%20Code%20-%20100%20movies%20to%20watch%20start/main.py): Scraping top 100 movies html page to extract names of movies.
+- Day 46: Intermediate+ Create a Spotify Playlist using the Musical Time Machine
+  - [Install spotipy](https://spotipy.readthedocs.io/en/2.13.0/#installation)
+  - [Modify private list scope](https://developer.spotify.com/documentation/web-api/concepts/scopes#playlist-modify-private)
+  - [Create playlist](/day-46/main.py): Run this code to create the list if you are having issues with the spotify authentication you can run first the [auth_spotify.py](/day-46/auth_spotify.py) to generate the `token.txt`
+  - [What the Heck is OAuth?](https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth)
 
 ## Environment
 
