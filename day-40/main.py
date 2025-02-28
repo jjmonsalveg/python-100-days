@@ -2,10 +2,9 @@ import os
 import time
 from datetime import datetime, timedelta
 
-from dotenv import load_dotenv
-
 from config import Config
 from data_manager import DataManager
+from dotenv import load_dotenv
 from flight_data import find_cheapest_flight
 from flight_search import FlightSearch
 from notification_manager import NotificationEmailManager, NotificationSMSManager

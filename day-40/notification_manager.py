@@ -1,10 +1,9 @@
 import smtplib
 from dataclasses import dataclass
 
-from twilio.rest import Client
-
 from config import Config
 from flight_data import FlightData
+from twilio.rest import Client
 
 
 @dataclass

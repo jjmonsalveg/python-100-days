@@ -1,4 +1,5 @@
 from os import name
+
 from bs4 import BeautifulSoup
 
 with open("website.html", mode="r") as file:
@@ -26,4 +27,3 @@ print(name)
 
 headings = soup.select_one(selector=".heading")
 print(headings)
-

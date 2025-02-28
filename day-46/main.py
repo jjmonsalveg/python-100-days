@@ -1,8 +1,9 @@
 import os
+
 import requests
-from dotenv import load_dotenv
-from bs4 import BeautifulSoup
 import spotipy
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyOAuth
 
 load_dotenv()
@@ -25,7 +26,9 @@ user_id = sp.current_user()["id"]
 print("User ID:", user_id)
 
 
-day_in_time = input("Wich year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
+day_in_time = input(
+    "Wich year do you want to travel to? Type the date in this format YYYY-MM-DD: "
+)
 
 header = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0"
@@ -41,19 +44,23 @@ song_names_spans = soup.select("li ul li h3")
 by_spans = soup.select("li ul li span")
 song_names = [song.getText().strip() for song in song_names_spans]
 
-spotify_data = [] 
+spotify_data = []
 for i in range(len(song_names)):
     song_name = song_names[i]
-    result = sp.search(q=f"track:{song_name} year:{day_in_time.split('-')[0]}", type="track")
+    result = sp.search(
+        q=f"track:{song_name} year:{day_in_time.split('-')[0]}", type="track"
+    )
     try:
         uri = result["tracks"]["items"][0]["uri"]
         spotify_data.append(uri)
     except IndexError:
         print(f"{song_name} doesn't exist in Spotify. Skipped.")
         continue
-    
+
     print(f"{i}. {song_name} - url spotify: {uri}")
 
-playlist_id = sp.user_playlist_create(user=user_id, name=f"{day_in_time} Billboard 100", public=False)
+playlist_id = sp.user_playlist_create(
+    user=user_id, name=f"{day_in_time} Billboard 100", public=False
+)
 
 sp.playlist_add_items(playlist_id["id"], spotify_data)
