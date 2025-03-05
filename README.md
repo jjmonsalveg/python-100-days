@@ -110,6 +110,7 @@
   - [Modify private list scope](https://developer.spotify.com/documentation/web-api/concepts/scopes#playlist-modify-private)
   - [Create playlist](/day-46/main.py): Run this code to create the list if you are having issues with the spotify authentication you can run first the [auth_spotify.py](/day-46/auth_spotify.py) to generate the `token.txt`
   - [What the Heck is OAuth?](https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth)
+- [Day 47: Intermediate+ Create an Automated Amazon Price Tracker](/day-47/main.py)
 
 ## Environment
 
