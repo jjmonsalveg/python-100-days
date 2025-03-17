@@ -18,5 +18,7 @@ last_name_input.send_keys("Doe")
 email_input = driver.find_element(By.NAME, value="email")
 email_input.send_keys("john.doe@gmail.com")
 
-button = driver.find_element(By.CSS_SELECTOR, value="button.btn.btn-lg.btn-primary.btn-block")
+button = driver.find_element(
+    By.CSS_SELECTOR, value="button.btn.btn-lg.btn-primary.btn-block"
+)
 button.click()

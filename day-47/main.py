@@ -51,7 +51,9 @@ soup = BeautifulSoup(response.text, "html.parser")
 price_element = soup.find(name="span", class_="a-offscreen")
 
 if price_element:
-    product_price = float(price_element.getText().replace("$", "").replace(",", "").strip())
+    product_price = float(
+        price_element.getText().replace("$", "").replace(",", "").strip()
+    )
     product_name_element = soup.find(id="productTitle")
     product_name_cleaned = ""
 
@@ -69,4 +71,3 @@ if price_element:
         )
 
 # In case you get catcha you can follow this steps to skip it https://gist.github.com/TheMuellenator/a5543bd7d8d18dbb8295c3c527fb4cfc?permalink_comment_id=5142250#gistcomment-5142250
-
