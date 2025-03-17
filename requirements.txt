@@ -10,3 +10,4 @@ twilio==9.3.8
 beautifulsoup4==4.13.3
 spotipy==2.25.1
 types-requests==2.32.0.20250301
+selenium==4.29.0
