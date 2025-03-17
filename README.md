@@ -111,6 +111,12 @@
   - [Create playlist](/day-46/main.py): Run this code to create the list if you are having issues with the spotify authentication you can run first the [auth_spotify.py](/day-46/auth_spotify.py) to generate the `token.txt`
   - [What the Heck is OAuth?](https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth)
 - [Day 47: Intermediate+ Create an Automated Amazon Price Tracker](/day-47/main.py)
+- Day 48: Intermediate+ Selenium Webdriver Browser and Game Playing Bot
+  - Resources:
+    - [Python Selenium](https://selenium-python.readthedocs.io/)
+    - [Selenium Docs](https://www.selenium.dev/documentation/)
+    - [cookie game](/day-48/cookie_game.py)
+    - [Sign Up example](/day-48/signup_lab_report.py)
 
 ## Environment
 
