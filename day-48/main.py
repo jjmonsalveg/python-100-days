@@ -1,4 +1,5 @@
 from tkinter import Button
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -38,17 +39,16 @@ li_upcoming_events = driver.find_elements(
 event_dict: dict = {}
 
 for index, event in enumerate(li_upcoming_events):
-    event_date_time = event.find_element(By.TAG_NAME, value="time").get_attribute("datetime")
+    event_date_time = event.find_element(By.TAG_NAME, value="time").get_attribute(
+        "datetime"
+    )
 
     if event_date_time:
         event_date = event_date_time.split("T")[0]
 
     event_name = event.find_element(By.TAG_NAME, value="a").text
 
-    event_dict[index] = {
-        "time": event_date,
-        "name": event_name
-    }
+    event_dict[index] = {"time": event_date, "name": event_name}
 
 print(event_dict)
 

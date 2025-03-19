@@ -11,7 +11,8 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get(url)
 
 statistics_link = driver.find_element(
-    By.CSS_SELECTOR, value='#articlecount > ul > li:nth-child(2) > a[title="Special:Statistics"]'
+    By.CSS_SELECTOR,
+    value='#articlecount > ul > li:nth-child(2) > a[title="Special:Statistics"]',
 )
 
 print(statistics_link.text)
@@ -27,4 +28,3 @@ search = driver.find_element(By.NAME, value="search")
 # search.send_keys("Python", Keys.ENTER)
 
 # driver.quit()
-
