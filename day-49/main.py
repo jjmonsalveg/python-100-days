@@ -21,6 +21,7 @@ def _do_jobs_scroll(driver):
     if len(child_elements) < 2:
         print("Scroll element not found.")
         driver.quit()
+        raise RuntimeError("Scroll element not found.")
 
     scroll_container = child_elements[1]
     _scroll_function(driver, scroll_container)
