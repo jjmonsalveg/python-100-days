@@ -117,6 +117,8 @@
     - [Selenium Docs](https://www.selenium.dev/documentation/)
     - [cookie game](/day-48/cookie_game.py)
     - [Sign Up example](/day-48/signup_lab_report.py)
+- Day 49: [Intermediate+ Automating Job Applications on LinkedIn](/day-49/main.py)
+    This script is meant to follow companies on LinkedIn that match the job descriptions you are interested in, but it does not apply to jobs automatically.
 
 ## Environment
 
