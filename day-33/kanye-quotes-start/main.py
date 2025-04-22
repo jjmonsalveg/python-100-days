@@ -1,4 +1,3 @@
-from pydoc import text
 from tkinter import Button, Canvas, PhotoImage, Tk
 
 import requests
