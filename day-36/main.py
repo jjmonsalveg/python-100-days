@@ -41,7 +41,7 @@ if abs(percentage) >= 0.05:
         "pageSize": 3,
     }
 
-    news_url = f"https://newsapi.org/v2/everything"
+    news_url = "https://newsapi.org/v2/everything"
     articles = requests.get(news_url, params=parameters).json()["articles"]
 
     for article in articles[:3]:

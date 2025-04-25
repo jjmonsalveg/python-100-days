@@ -120,6 +120,9 @@
 - Day 49: [Intermediate+ Automating Job Applications on LinkedIn](/day-49/main.py)
     This script is meant to follow companies on LinkedIn that match the job descriptions you are interested in, but it does not apply to jobs automatically.
 
+- Day 50: [Intermediate+ Auto Tinder Swiping Bot](/day-50/main.py)
+    This script is meant to automate the swiping process on Tinder
+
 ## Environment
 
 We are going to use the python-100-days virtual environment for the project.
