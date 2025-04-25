@@ -1,11 +1,10 @@
-STOCK = "TSLA"
-COMPANY_NAME = "Tesla Inc"
-
-import os
-
 import requests
+import os
 from dotenv import load_dotenv
 from twilio.rest import Client
+
+STOCK = "TSLA"
+COMPANY_NAME = "Tesla Inc"
 
 load_dotenv()
 

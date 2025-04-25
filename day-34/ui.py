@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Label, Canvas, PhotoImage, Button
 
 from quiz_brain import QuizBrain
 
