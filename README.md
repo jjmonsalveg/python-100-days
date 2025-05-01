@@ -123,6 +123,8 @@
 - Day 50: [Intermediate+ Auto Tinder Swiping Bot](/day-50/main.py)
     This script is meant to automate the swiping process on Tinder
 
+- Day 51: [Intermediate+ Internet Speed Twitter Complaint Bot](/day-51/main.py)
+
 ## Environment
 
 We are going to use the python-100-days virtual environment for the project.
