@@ -125,6 +125,9 @@
 
 - Day 51: [Intermediate+ Internet Speed Twitter Complaint Bot](/day-51/main.py)
 
+- Day 52: [Intermediate+ Automated Instagram Follower Bot](/day-52/main.py)
+    This script is meant to follow users on Instagram that match the job descriptions you are interested in, but it does not apply to jobs automatically.
+
 ## Environment
 
 We are going to use the python-100-days virtual environment for the project.
